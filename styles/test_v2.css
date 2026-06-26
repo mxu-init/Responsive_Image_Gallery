@@ -31,8 +31,18 @@ header {
 }
 
 
-@media (max-width: 600px) {
-  .flex-container {
-    flex-direction: column;
-  }
+@media (max-width:900px){
+
+    .flex-item{
+        flex: 0 0 calc(50% - 10px);
+    }
+
+}
+
+@media (max-width:600px){
+
+    .flex-item{
+        flex: 0 0 100%;
+    }
+
 }

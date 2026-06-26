@@ -6,7 +6,8 @@ header {
 .gallery_container {
     width: 85%;
     margin: auto;
-
+    
+    background-color: rgb(221, 221, 221);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -23,7 +24,7 @@ header {
 }
 
 .image_container {
-    height: 250px;
+    /* min-height: 80%; */
 }
 
 .image_container img {
@@ -37,8 +38,26 @@ header {
 .image_description {
     padding: 15px;
     text-align: center;
+    min-height: 20%;
 }
 
 .image_description p {
     margin: 0;
+}
+
+
+@media (max-width:900px){
+
+    .gallery_item{
+        flex: 0 0 calc(50% - 10px);
+    }
+
+}
+
+@media (max-width:600px){
+
+    .gallery_item{
+        flex: 0 0 100%;
+    }
+
 }
